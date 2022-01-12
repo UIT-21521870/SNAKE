@@ -27,7 +27,7 @@ for(int i=0;i<9999;i++)
      if(i>0)
         {
             cout<<""<<endl;
-            cout<<"Ban co muon tiep tuc choi? [y/n]   ";
+            cout<<"Do you want to play again? [y/n]   ";
             cin>>sl;
             if(sl=='y')
             {
@@ -71,20 +71,3 @@ for(int i=0;i<9999;i++)
     return 0;
 }
 
-void table(char s[][40],int score)
-{
-    int x=50;
-    int y=40;
-    int i,j;
-    for(i=0;i<y;i++)
-    {
-        for(j=0;j<x;j++)
-        {
-            if(j<(x-1)) cout<<s[j][i];
-            if(j==(x-1)) cout<<s[j][i]<<endl;
-        }
-    }
-    cout<<""<<endl;
-    cout<<"Your score: "<<score;
-}
-}
